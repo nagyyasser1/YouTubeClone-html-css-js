@@ -126,9 +126,12 @@
      height: 100%;
      background-color: white;
      width: 280px;
-
      overflow-y: auto;
      /* margin-left: -500px; */
+ }
+
+ .hidden {
+     display: none;
  }
 
  nav {

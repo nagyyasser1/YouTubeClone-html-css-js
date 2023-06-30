@@ -18,7 +18,7 @@
 <body>
     <header>
         <div class="left-section">
-            <span class="material-symbols-outlined">menu</span>
+            <span class="material-symbols-outlined" id="menu_icon">menu</span>
             <img src="./images/youtube-logo.png" alt="youtube-logo">
         </div>
         <div class="mid-section">
@@ -37,7 +37,7 @@
     </header>
 
     <div class="content-area">
-        <aside>
+        <aside id="aside" class="hidden">
             <nav>
                 <a href="" class="nav-link active">
                     <i class="material-icons-outlined">home</i>
@@ -77,35 +77,15 @@
                 <hr>
                 <div class="subscriptioins-container">
                     <p class="subscriptions-title">SUBSCRIPTIONS</p>
-                    <a href="" class="nav-link">
-                        <img class="nav-link-img" src="./images/nagy.png" alt="">
-                        <span>nagyyasser1</span>
-                    </a>
-                    <a href="" class="nav-link">
-                        <img class="nav-link-img" src="./images/nagy.png" alt="">
-                        <span>nagyyasser1</span>
-                    </a>
-                    <a href="" class="nav-link">
-                        <img class="nav-link-img" src="./images/nagy.png" alt="">
-                        <span>nagyyasser1</span>
-                    </a>
-                    <a href="" class="nav-link">
-                        <img class="nav-link-img" src="./images/nagy.png" alt="">
-                        <span>nagyyasser1</span>
-                    </a>
-                    <a href="" class="nav-link">
-                        <img class="nav-link-img" src="./images/nagy.png" alt="">
-                        <span>nagyyasser1</span>
-                    </a>
-                    <a href="" class="nav-link">
-                        <img class="nav-link-img" src="./images/nagy.png" alt="">
-                        <span>nagyyasser1</span>
-                    </a>
-                    <a href="" class="nav-link">
+                    <div id="subscriptioins">
+
+                    </div>
+                    <a href="" class="nav-link" id="show_more_btn" collapced="false">
                         <i class="material-symbols-outlined">
-                            arrow_downward
+                            expand_more
+
                         </i>
-                        <span>Show More</span>
+                        <span>Show More...</span>
                     </a>
                 </div>
                 <hr>
@@ -150,7 +130,6 @@
         </aside>
         <main>
             <div class="videos-container">
-
                 <div class="video-card">
                     <div class="video-thumbnail">
                         <img src="https://via.placeholder.com/300x200" alt="Video Thumbnail">
