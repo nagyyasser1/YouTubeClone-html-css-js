@@ -16,6 +16,9 @@ var subscriptions = [
   { id: 10, username: "nagyyasser1", Img_url: "./images/nagy.png" },
 ];
 
+function createElements() {}
+
+// List the first 3 of my Subscriptions on sideNave
 function list_subscriptions(count = 3) {
   for (let i = 0; i < count; i++) {
     const a = document.createElement("a");
@@ -42,7 +45,7 @@ function showMore() {
 function showLess() {
   list_subscriptions(3);
   show_more.querySelector(":nth-child(1)").textContent = "expand_more";
-  show_more.querySelector(":nth-child(2)").textContent = "Show More...";
+  show_more.querySelector(":nth-child(2)").textContent = `Show ${subscriptions.length-3} More...`;
   show_more.setAttribute("collapced", "false");
 }
 
